@@ -85,10 +85,19 @@ button {
   line-height: 0;
 }
 .container-mobile-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 24px;
   padding-right: 24px;
   padding-bottom: 40px;
   padding-left: 40px;
+  height: 100%;
+}
+.container-mobile-bottom {
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu {
   position: fixed;
@@ -111,9 +120,6 @@ button {
   visibility: visible;
   pointer-events: auto;
 }
-.container-mobile-menu {
-  position: relative;
-}
 .btn-mobile-menu {
   position: absolute;
   top: 24px;
@@ -135,7 +141,7 @@ button {
   fill: #ffffff;
 }
 .nav-mobile-list {
-  margin-bottom: 284px;
+  margin-bottom: 80px;
 }
 .nav-mobile-item:not(:last-child) {
   margin-bottom: 40px;
@@ -402,6 +408,8 @@ button {
   }
   .hero-title {
     margin-bottom: 40px;
+    font-size: 56px;
+    line-height: 1.07;
   }
 }
 
@@ -670,6 +678,7 @@ button {
 @media screen and (min-width: 1200px) {
   .about {
     display: block;
+    margin-bottom: 120px;
   }
   .about-title {
     font-weight: 700;
@@ -985,6 +994,9 @@ button {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container.footer-flex {
+    width: 552px;
+  }
   .top-teblet-footer {
     margin-bottom: 72px;
   }
